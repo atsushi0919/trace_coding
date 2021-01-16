@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  color: #383e45;
+  color: darkslategray;
   font-size: 0.9rem;
 }
 
@@ -40,7 +40,7 @@ li {
   text-align: center;
   width: 120px;
   margin-bottom: 60px;
-  border-bottom: solid 1px #383e45;
+  border-bottom: solid 1px darkslategray;
 } 
 
 /* h3タグ用 */
@@ -102,4 +102,45 @@ mainvisual
   #mainvisual img {
     height: calc(100vh - 60px);   /* 縦幅いっぱい 100vh - 60px(ヘッダー分) */
   }
+}
+
+/*----------
+About
+----------*/
+#about .content {
+  display: flex;                  /* flexboxで子要素を並べる */
+  justify-content: center;        /* 水平方向 中央揃え */
+  align-items: center;            /* 垂直方向 中央揃え */
+}
+
+#about img {
+  width: 100px;                   /* 幅指定 */
+  height: 100px;                  /* 高さ指定 */
+  border-radius: 50%;             /* 角R */
+  margin-right: 30px;
+}
+
+#about .text {
+  text-align: left;
+}
+
+/*----------
+Works
+----------*/
+#works .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#works li {
+  width: 32%;
+}
+
+/*----------
+Footer
+----------*/
+#footer {
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
 }
