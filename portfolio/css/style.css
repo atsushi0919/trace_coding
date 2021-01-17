@@ -98,12 +98,6 @@ mainvisual
   object-fit: cover;              /* 横幅が画面にあわせて伸縮 */
 }
 
-@media screen and (max-width: 600px) {
-  #mainvisual img {
-    height: calc(100vh - 60px);   /* 縦幅いっぱい 100vh - 60px(ヘッダー分) */
-  }
-}
-
 /*----------
 About
 ----------*/
@@ -132,7 +126,7 @@ Works
   justify-content: space-between;
 }
 
-#works li {
+#works .card {
   width: 32%;
 }
 
@@ -144,3 +138,31 @@ Footer
   padding: 10px 0;
   text-align: center;
 }
+
+/*----------
+画面幅600以下
+----------*/
+@media screen and (max-width: 600px) {
+
+  #mainvisual img {
+    height: calc(100vh - 60px);         /* 縦幅いっぱい 100vh - 60px(ヘッダー分) */
+  }
+
+  #about .content {
+    flex-direction: column;
+  }
+
+  #about img {
+    margin-right: 0px;
+  }
+
+  #works .content {
+   flex-direction: column;
+  }
+
+  #works .card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
