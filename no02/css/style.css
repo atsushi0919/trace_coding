@@ -11,3 +11,68 @@ html {
   "MS PGothic",
   sans-serif;
 }
+
+body {
+  color: black;
+  font-size: 0.9rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  /* 画像が画面の横幅からはみ出るのを防ぐ */
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+/* h1タグ用 */
+.site-title {
+  font-weight: normal;
+}
+
+/* h2タグ用 */
+.section-title {
+  background-color: gray;
+} 
+
+/* h3タグ用 */
+.content-title {
+  background-color: gray;
+}
+
+/* wrapper */
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+/*-- header --*/
+#header {
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#header img {
+  width: 20px;
+  height: 20px;
+
+}
+
+#header ul {
+  display: flex;
+}
+
+#header li {
+  margin-left: 30px;
+}
