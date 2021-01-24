@@ -2,19 +2,18 @@
 
 html {
   font-size: 100%;
-  font-family:"ヒラギノ角ゴ Pro W3",
-  "Hiragino Kaku Gothic Pro",
-  "メイリオ",
-  Meiryo,
-  Osaka,
-  "ＭＳ Ｐゴシック",
-  "MS PGothic",
-  sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro",
+    "メイリオ",
+    Meiryo,
+    Osaka,
+    "ＭＳ Ｐゴシック",
+    "MS PGothic",
+    sans-serif;
 }
 
 body {
   color: black;
-  font-size: 0.9rem;
 }
 
 a {
@@ -33,46 +32,57 @@ li {
 
 /* h1タグ用 */
 .site-title {
-  font-weight: normal;
+  line-height: 1px;
 }
 
-/* h2タグ用 */
-.section-title {
-  background-color: gray;
-} 
-
-/* h3タグ用 */
-.content-title {
-  background-color: gray;
+.site-title a {
+  display: block;
 }
 
 /* wrapper */
 .wrapper {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
   padding: 0 4%;
-  text-align: center;
 }
 
 /*-- header --*/
 #header {
+  max-width: 960px;
   height: 270px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-}
-
-#header img {
-  width: 20px;
-  height: 20px;
-
+  padding: 0 4%;
 }
 
 #header ul {
   display: flex;
+  padding: 10px 0;
 }
 
 #header li {
   margin-left: 30px;
+  font-size: 0.9rem;
+}
+
+#header li a {
+  color: black;
+}
+
+#header li a:hover {
+  opacity: 0.7;
+}
+
+#header li img {
+  width: 20px;
+}
+
+/* mainvisual */
+#mainvisual img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
 }
