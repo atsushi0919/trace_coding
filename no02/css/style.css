@@ -30,6 +30,14 @@ li {
   list-style: none;
 }
 
+/* wrapper */
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+
 /* h1タグ用 */
 .site-title {
   line-height: 1px;
@@ -46,21 +54,13 @@ li {
   margin-bottom: 65px;
 }
 
-/* wrapper */
-.wrapper {
-  max-width: 960px;
-  margin: 0 auto 130px auto;
-  font-size: 0.9rem;
-  padding: 0 4%;
-}
-
 /*-- header --*/
 #header {
   max-width: 960px;
-  height: 270px;
-  display: flex;
+   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 270px;
   margin: 0 auto;
   padding: 0 4%;
 }
@@ -88,9 +88,26 @@ li {
 }
 
 /* mainvisual */
+#mainvisual {
+  margin-bottom: 80px;
+}
+
 #mainvisual img {
   width: 100%;
+  max-width: 1920px;
   height: 420px;
   object-fit: cover;
-  margin-bottom: 80px;
+}
+
+/* about */
+#about ul {
+  margin-bottom: 30px;
+}
+
+#about .top {
+  margin-bottom: 30px;
+}
+
+#about p {
+  text-align: justify;
 }
