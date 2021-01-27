@@ -111,3 +111,14 @@ li {
 #about p {
   text-align: justify;
 }
+
+/* works */
+#works ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#works li {
+  width: 31%;
+}
