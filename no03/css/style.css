@@ -41,7 +41,7 @@ li {
 /* read more */
 .readmore {
   text-decoration: underline;
-  font-size: 0.77rem;
+  font-size: 0.8rem;
   text-align: center;
   padding: 14px;
 }
@@ -108,14 +108,81 @@ main {
   width: 65%;
 }
 
+main article {
+  margin-top: 64px;
+}
+
+main ul {
+  font-size: 0.8rem;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+main li {
+  padding-right: 20px;
+}
+
+main p {
+  padding-top: 10px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 /* aside */
 aside {
   width: 30%;
   margin-left: 40px;
+  text-align: center;
 }
 
+aside h3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 1rem;
+}
 
+/* profile */
+#profile {
+  padding-top: 64px;
+}
 
+#profile img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  padding: 0 auto;
+}
+
+#profile p {
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+/* ranking */
+#ranking {
+  margin-top: 32px;
+}
+
+#ranking .ranking-title {
+  padding-bottom: 22px;
+  font-weight: normal;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/* archive */
+#archive ul {
+  text-align: left;
+  border-top: solid 1px darkgray;
+}
+
+#archive li {
+  font-size: 0.8rem;
+  padding: 20px;
+  border-bottom: solid 1px darkgray;
+}
 
 
 
