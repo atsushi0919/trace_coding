@@ -238,10 +238,41 @@ footer .copyright {
 }
 
 /*--------------------
-width 600px
+width 767px
 --------------------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .wrapper {
-    margin-bottom: 70px;
+  }
+
+  /* pickup */
+
+  #pickup {
+    flex-direction: column;
+    padding-top: 140px;
+  }
+
+  #pickup article {
+    width: 100%;  
+  }
+
+  #container {
+  flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    margin: 0;
+  }
+
+  footer .content {
+  flex-direction: column;
+  }
+
+  footer .item {
+  width: 100%;
   }
 }
