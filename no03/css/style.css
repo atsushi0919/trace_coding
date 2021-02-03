@@ -241,10 +241,6 @@ footer .copyright {
 width 767px
 --------------------*/
 @media screen and (max-width: 767px) {
-  .wrapper {
-  }
-
-  /* pickup */
 
   #pickup {
     flex-direction: column;
@@ -274,5 +270,6 @@ width 767px
 
   footer .item {
   width: 100%;
+  margin: 0 10px;
   }
 }
