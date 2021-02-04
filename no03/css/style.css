@@ -40,11 +40,30 @@ li {
 
 /* read more */
 .readmore {
-  text-decoration: underline;
   font-size: 0.8rem;
   text-align: center;
-  padding: 14px;
 }
+
+.readmore a {
+  padding-bottom: 1px;
+  position: relative;
+}
+
+.readmore a::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: black;
+  transition: all 200ms ease;
+}
+
+ .readmore a:hover::after {
+   opacity: 0;
+   transform: translateY(3px);
+ }
 
 /* header */
 
