@@ -60,10 +60,10 @@ li {
   transition: all 200ms ease;
 }
 
- .readmore a:hover::after {
-   opacity: 0;
-   transform: translateY(3px);
- }
+.readmore a:hover::after {
+  opacity: 0;
+  transform: translateY(3px);
+}
 
 /* header */
 
@@ -71,6 +71,7 @@ li {
   width: 100%;
   position: fixed;
   background-color: white;
+  z-index: 10;
 }
 
 #header .site-title {
@@ -113,7 +114,7 @@ li {
 
 #pickup .pickup-title {
   font-size: 1rem;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 /* container */
@@ -267,11 +268,12 @@ width 767px
   }
 
   #pickup article {
-    width: 100%;  
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   #container {
-  flex-direction: column;
+    flex-direction: column;
   }
 
   main {
@@ -284,11 +286,11 @@ width 767px
   }
 
   footer .content {
-  flex-direction: column;
+    flex-direction: column;
   }
 
   footer .item {
-  width: 100%;
-  margin: 0 10px;
+    width: 100%;
+    margin: 0 10px;
   }
 }
