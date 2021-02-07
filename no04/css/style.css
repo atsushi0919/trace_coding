@@ -12,6 +12,18 @@ html {
     sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: rgb(240, 240, 240);
 }
@@ -19,6 +31,51 @@ body {
 .wrapper {
   max-width: 1000px;
   padding: 0 16px;
+}
+
+.site-title {
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+}
+
+/* header */
+header {
+  background-image: url("../img/mainvisual.jpg");
+  background-size: cover;
+  background-position: center top;
+  min-height: 100vh;
+
+}
+
+header ul {
+  display: flex;
+  float: right;
+  padding-top: 19px;
+  padding-right: 40px;
+}
+
+header li {
+  padding-left: 30px;
+}
+
+header li a {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+  transition: color 0.5s;
+}
+
+header li a:hover {
+  color: red
+}
+
+header img {
+  height: 100px;
+  filter: drop-shadow(2px 2px 8px rgba(220, 220, 220, 1));
 }
 
 /*--------------------
