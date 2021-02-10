@@ -1,81 +1,93 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JVBDVWRE78"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-JVBDVWRE78");
+    </script>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <meta
+      name="description"
+      content="Codestepでコーディング練習（入門編プロフィール）"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <meta name="robots" content="noindex,nofollow,noarchive">
-  <meta name="description" content="Codestepでコーディング練習（入門編プロフィール）">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-</head>
+  <body>
+    <!-- header -->
+    <header id="header" class="wrapper">
+      <h1 class="site-title">
+        <a href="index.html"><img src="./img/logo.svg" alt="Portfolio" /></a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <!-- header -->
-  <header id="header" class="wrapper">
-    <h1 class="site-title">
-      <a href="index.html"><img src="./img/logo.svg" alt="Portfolio"></a>
-    </h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#works">Works</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <!-- mainvisual -->
-    <div id="mainvisual">
-      <img src="./img/mainvisual.jpg" alt="mainvisual">
-    </div>
-
-    <!-- about -->
-    <section id="about" class="wrapper">
-      <h2 class="section-title">About</h2>
-      <div class="content">
-        <img src="./img/about.jpg" alt="about">
-        <div class="text">
-          <h3 class="content-title">吾輩は猫である</h3>
-          <p>
-            吾輩は猫である。名前はまだ無い。<br>
-            どこで生れたかとんと見当がつかぬ。<br>
-            何でも薄暗いじめじめした所でニャー
-          </p>
-        </div>
+    <main>
+      <!-- mainvisual -->
+      <div id="mainvisual">
+        <img src="./img/mainvisual.jpg" alt="mainvisual" />
       </div>
-    </section>
 
-    <!-- works -->
-    <section id="works" class="wrapper">
-      <h2 class="section-title">Works</h2>
-      <ul class="content">
-        <li class="card">
-          <img src="./img/works1.jpg" alt="works1">
-          <h3 class="content-title">タイトル１</h3>
-          <p>テキストテキストテキスト</p>
-        </li>
-        <li class="card">
-          <img src="./img/works2.jpg" alt="works2">
-          <h3 class="content-title">タイトル２</h3>
-          <p>テキストテキストテキスト</p>
-        </li>
-        <li class="card">
-          <img src="./img/works3.jpg" alt="works3">
-          <h3 class="content-title">タイトル３</h3>
-          <p>テキストテキストテキスト</p>
-        </li>
-      </ul>
-    </section>
-  </main>
+      <!-- about -->
+      <section id="about" class="wrapper">
+        <h2 class="section-title">About</h2>
+        <div class="content">
+          <img src="./img/about.jpg" alt="about" />
+          <div class="text">
+            <h3 class="content-title">吾輩は猫である</h3>
+            <p>
+              吾輩は猫である。名前はまだ無い。<br />
+              どこで生れたかとんと見当がつかぬ。<br />
+              何でも薄暗いじめじめした所でニャー
+            </p>
+          </div>
+        </div>
+      </section>
 
-  <!-- footer -->
-  <footer id="footer">
-    <p>&copy; 2021 Portfolio</p>
-  </footer>
+      <!-- works -->
+      <section id="works" class="wrapper">
+        <h2 class="section-title">Works</h2>
+        <ul class="content">
+          <li class="card">
+            <img src="./img/works1.jpg" alt="works1" />
+            <h3 class="content-title">タイトル１</h3>
+            <p>テキストテキストテキスト</p>
+          </li>
+          <li class="card">
+            <img src="./img/works2.jpg" alt="works2" />
+            <h3 class="content-title">タイトル２</h3>
+            <p>テキストテキストテキスト</p>
+          </li>
+          <li class="card">
+            <img src="./img/works3.jpg" alt="works3" />
+            <h3 class="content-title">タイトル３</h3>
+            <p>テキストテキストテキスト</p>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-</body>
-
+    <!-- footer -->
+    <footer id="footer">
+      <p>&copy; 2021 Portfolio</p>
+    </footer>
+  </body>
 </html>
