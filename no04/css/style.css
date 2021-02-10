@@ -2,14 +2,8 @@
 
 html {
   font-size: 100%;
-  font-family: "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro",
-    "メイリオ",
-    Meiryo,
-    Osaka,
-    "ＭＳ Ｐゴシック",
-    "MS PGothic",
-    sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 img {
@@ -55,15 +49,15 @@ body {
   background-color: #fff;
 }
 
-.parallax_content.img_bg_01 {
+.parallax_content.menu_bg {
   background-image: url(../img/menu.jpg);
 }
 
-.parallax_content.img_bg_02 {
+.parallax_content.about_bg {
   background-image: url(../img/about.jpg);
 }
 
-.parallax_content.img_bg_03 {
+.parallax_content.location_bg {
   background-image: url(../img/location.jpg);
 }
 
@@ -96,7 +90,7 @@ header li a {
 }
 
 header li a:hover {
-  color: red
+  color: red;
 }
 
 header img {
@@ -107,4 +101,5 @@ header img {
 /*--------------------
 width 767px
 --------------------*/
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+}
