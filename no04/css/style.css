@@ -190,7 +190,39 @@ header img {
   padding: 15px 40px;
 }
 
+/* location */
+#location .container {
+  margin-bottom: 100px;
+}
 
+#location .store-info {
+  font-size: 0.9rem;
+  padding-top: 26px;
+}
+
+#location p {
+  padding-bottom: 10px;
+  line-height: 1.5rem;
+
+}
+
+.map {
+  height: 400px;
+  margin-top: 86px;
+
+  background-color: gray;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: white;
+}
+
+footer p {
+  font-size: 0.75rem;
+  padding-bottom: 12px;
+}
 
 /*--------------------
 width 767px
