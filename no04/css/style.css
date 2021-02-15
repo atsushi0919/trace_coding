@@ -185,8 +185,50 @@ header img {
 .readmore a {
   font-size: 0.9rem;
   color: black;
-  border: solid 2px red;
   padding: 15px 40px;
+  position: relative;
+}
+
+.readmore a:before,
+.readmore a:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background: red;
+  transition: all 0.3s ease;
+}
+
+.readmore a .reverse:before,
+.readmore a .reverse:after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  background: red;
+  transition: all 0.3s ease;
+}
+
+.readmore a:before,
+.readmore a .reverse:before {
+  width: 2px;
+  height: 50%;
+}
+
+.readmore a:after,
+.readmore a .reverse:after {
+  width: 20%;
+  height: 2px;
+}
+
+.readmore a:hover:before,
+.readmore a:hover .reverse:before {
+  height: 100%;
+}
+
+.readmore a:hover:after,
+.readmore a:hover .reverse:after {
+  width: 100%;
 }
 
 /* location */
