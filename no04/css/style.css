@@ -54,7 +54,7 @@ body {
 
 /* parallax */
 .parallax_content {
-  min-height: 300px;
+  height: 300px;
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -272,12 +272,12 @@ width 767px
   }
 
   .parallax_content {
-    min-height: 94px;
+    height: 94px;
     background-attachment: local;
   }
 
   .parallax_content.menu_bg {
-    background-position: center -190px;
+    background-position: center center;
   }
 
   .parallax_content.about_bg {
@@ -339,7 +339,7 @@ width 767px
   }
 
   .menu-list dd {
-    padding-left: 42px;
+    padding-left: 2%;
   }
 
   /* about */
