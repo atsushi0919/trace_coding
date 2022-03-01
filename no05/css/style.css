@@ -21,6 +21,50 @@ a {
   margin: 0 auto;
 }
 
+/* ヘッダ */
+header {
+  height: 80px; /* 高さ固定 */
+}
+
+#top-menu {
+  height: 80px; /* 高さ固定 */
+  display: flex; /* フレックスボックス */
+  justify-content: space-between; /* 横方向 左右端 */
+  align-items: center; /* 縦方向 中央揃え */
+}
+
+#logo {
+  width: 180px;
+}
+
+#hbg-btn {
+  height: 32px;
+  width: 32px;
+  background-color: blueviolet; /* 確認用 */
+}
+
+#side-menu {
+  visibility: hidden; /* 隠しておく */
+}
+
+/* メイン */
+
+ul.item-list {
+  display: flex; /* フレックスボックス */
+  flex-wrap: wrap; /* 折り返す */
+  justify-content: space-between; /* 横方向 左右端 */
+  /* align-items: center; 縦方向 中央揃え */
+  /* background-color: rgb(141, 241, 171); 確認用 */
+}
+
+.item-list li {
+  margin-bottom: 40px;
+}
+
+.item-list img {
+  max-width: 300px; /* 仮 */
+}
+
 /*--------------------
 width 900px
 --------------------*/

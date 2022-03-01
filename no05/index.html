@@ -15,14 +15,20 @@
 
   <body>
     <!-- ヘッダー -->
-    <header>
-      <h1 class="site-title">
-        <img src="img/logo.svg" alt="Furniture Design" />
-      </h1>
+    <header class="wrapper">
+      <div id="top-menu">
+        <h1 class="site-title">
+          <a href="index.html">
+            <img id="logo" src="img/logo.svg" alt="Furniture Design" />
+          </a>
+        </h1>
+        <!-- ハンバーガーボタン -->
+        <div id="hbg-btn"></div>
+      </div>
 
-      <!-- メニュー -->
+      <!-- ポップアップメニュー -->
       <!-- ハンバーガーボタンをクリックすると表示 -->
-      <nav>
+      <nav id="side-menu">
         <ul>
           <li><a href="#">PRODUCTS</a></li>
           <li><a href="#">ABOUT</a></li>
@@ -33,10 +39,60 @@
     </header>
 
     <!-- メイン -->
-    <main></main>
+    <main class="wrapper">
+      <ul class="item-list">
+        <li>
+          <a href="#"> <img src="img/item01.jpg" alt="item01" /> </a>
+          <p>商品名01商品名01商品名01</p>
+          <p>&yen;11,111 +tax</p>
+        </li>
+        <li>
+          <a href="#"> <img src="img/item02.jpg" alt="item02" /> </a>
+          <p>商品名02商品名02商品名02</p>
+          <p>&yen;22,222 +tax</p>
+        </li>
+        <li>
+          <a href="#"> <img src="img/item03.jpg" alt="item03" /> </a>
+          <p>商品名03商品名03商品名03</p>
+          <p>&yen;33,333 +tax</p>
+        </li>
+        <li>
+          <a href="#"> <img src="img/item04.jpg" alt="item04" /> </a>
+          <p>商品名04商品名04商品名04</p>
+          <p>&yen;44,444 +tax</p>
+        </li>
+        <li>
+          <a href="#"> <img src="img/item05.jpg" alt="item05" /> </a>
+          <p>商品名05商品名05商品名05</p>
+          <p>&yen;55,555 +tax</p>
+        </li>
+        <li>
+          <a href="#"> <img src="img/item06.jpg" alt="item06" /> </a>
+          <p>商品名06商品名06商品名06</p>
+          <p>&yen;66,666 +tax</p>
+        </li>
+        <li>
+          <a href="#"> <img src="img/item07.jpg" alt="item07" /> </a>
+          <p>商品名07商品名07商品名07</p>
+          <p>&yen;77,777 +tax</p>
+        </li>
+        <li>
+          <a href="#"> <img src="img/item08.jpg" alt="item08" /> </a>
+          <p>商品名08商品名08商品名08</p>
+          <p>&yen;88,888 +tax</p>
+        </li>
+      </ul>
+
+      <p>View More</p>
+    </main>
 
     <!-- フッター -->
-    <footer>
+    <footer class="wrapper">
+      <ul>
+        <li>INSTAGRAM</li>
+        <li>TWITTER</li>
+        <li>FACEBOOK</li>
+      </ul>
       <p><small>&copy; Furniture Design</small></p>
     </footer>
   </body>
