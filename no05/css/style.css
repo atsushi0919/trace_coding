@@ -47,7 +47,7 @@ header {
   cursor: pointer;
 
   /* 確認用 */
-  background-color: rgb(231, 210, 250);
+  /* background-color: rgb(231, 210, 250); */
 }
 
 /* 線の設定 */
@@ -58,20 +58,44 @@ header {
   width: 30px; /* 線の長さ */
   height: 2px; /* 線の太さ */
   background-color: #333333;
-  z-index: 10;
+  z-index: 30;
+  transition: all 0.5s;
+}
+
+.nav_open .hamburger_line {
+  background-color: #fff;
 }
 
 .hamburger_line1 {
   top: 35px;
 }
 
+.nav_open .hamburger_line1 {
+  transform: rotate(-45deg);
+  top: 39px;
+}
+
 .hamburger_line2 {
   top: 43px;
+}
+
+.nav_open .hamburger_line2 {
+  transform: rotate(45deg);
+  top: 39px;
 }
 
 #side_menu {
   position: fixed; /* 個別に位置を制御 */
   visibility: hidden; /* 隠しておく */
+  z-index: 30;
+}
+
+#side_menu a {
+  color: white;
+}
+
+.nav_open #side_menu {
+  visibility: visible; /* 表示 */
 }
 
 #side_menu_bg {
@@ -84,8 +108,12 @@ header {
   visibility: hidden; /* 隠しておく */
   background-color: black;
   opacity: 0;
-  transition: all 0.6s;
   cursor: pointer;
+}
+
+.nav_open #side_menu_bg {
+  opacity: 0.8;
+  visibility: visible;
 }
 
 /* トップ 商品一覧 */
