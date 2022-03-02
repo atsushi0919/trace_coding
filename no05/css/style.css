@@ -86,16 +86,25 @@ header {
 
 #side_menu {
   position: fixed; /* 個別に位置を制御 */
+  top: 20px;
+  left: -100px; /* 左側にに隠しておく */
   visibility: hidden; /* 隠しておく */
   z-index: 30;
+  transition: all 0.5s;
+}
+
+.nav_item {
+  padding-top: 1rem;
 }
 
 #side_menu a {
+  font-size: 0.9rem;
   color: white;
 }
 
 .nav_open #side_menu {
   visibility: visible; /* 表示 */
+  left: 50px;
 }
 
 #side_menu_bg {
