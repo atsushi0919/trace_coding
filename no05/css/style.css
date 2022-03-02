@@ -30,8 +30,8 @@ header {
   display: flex; /* フレックスボックス */
   align-items: center; /* 縦方向 中央揃え */
   justify-content: space-between; /* ロゴとボタンを左右に配置 */
-  left: 0;
-  right: 0;
+  left: 0; /* 左端設定 */
+  right: 0; /* 右端設定*/
   background-color: white;
 }
 
@@ -39,20 +39,57 @@ header {
   width: 180px;
 }
 
-#hamburger-btn {
-  height: 32px;
-  width: 32px;
+/* ハンバーガーボタン */
+#hamburger_btn {
+  height: 30px;
+  width: 30px;
   text-align: right;
-  background-color: blueviolet; /* 確認用 */
+  cursor: pointer;
+
+  /* 確認用 */
+  background-color: rgb(231, 210, 250);
 }
 
-#side-menu {
-  position: fixed; /* 位置を制御 */
-  visibility: visible; /* 隠しておく */
+/* 線の設定 */
+/* 共通 */
+.hamburger_line {
+  position: absolute; /* 絶対配置 */
+  right: 40px; /* 右端設定 */
+  width: 30px; /* 線の長さ */
+  height: 2px; /* 線の太さ */
+  background-color: #333333;
+  z-index: 10;
+}
+
+.hamburger_line1 {
+  top: 35px;
+}
+
+.hamburger_line2 {
+  top: 43px;
+}
+
+#side_menu {
+  position: fixed; /* 個別に位置を制御 */
+  visibility: hidden; /* 隠しておく */
+}
+
+#side_menu_bg {
+  position: fixed; /* 個別に位置を制御 */
+  left: 0; /* 基準左端 */
+  top: 0; /* 基準上端 */
+  width: 100vw; /* 幅を画面に合わせる */
+  height: 100vh; /* 高さを画面に合わせる */
+  z-index: 20; /* 奥行設定 */
+  visibility: hidden; /* 隠しておく */
+  background-color: black;
+  opacity: 0;
+  transition: all 0.6s;
+  cursor: pointer;
 }
 
 /* トップ 商品一覧 */
-.item-list {
+.item_list {
   padding-top: 80px;
   display: flex; /* フレックスボックス */
   flex-wrap: wrap; /* 折り返す */
@@ -60,12 +97,12 @@ header {
   /* background-color: rgb(141, 241, 171); 確認用 */
 }
 
-.item-list li {
+.item_list li {
   width: 23%;
   margin-bottom: 40px;
 }
 
-.item-list img {
+.item_list img {
   width: 100%;
 }
 
