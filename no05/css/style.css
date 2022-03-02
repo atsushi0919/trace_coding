@@ -135,12 +135,17 @@ header {
 }
 
 .item_list li {
+  font-size: 0.75rem;
   width: 23%;
   margin-bottom: 40px;
 }
 
 .item_list img {
   width: 100%;
+}
+
+.item_list .item_info {
+  padding-top: 5px;
 }
 
 /*--------------------
