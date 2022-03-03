@@ -9,7 +9,7 @@
 html {
   color: var(--base-color);
   font-size: 100%;
-  font-family: 'メイリオ', Meiryo, 'Helvetica Neue', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka,
+  font-family: Meiryo, 'メイリオ', 'Helvetica Neue', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka,
     'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   scroll-behavior: smooth;
 }
@@ -34,13 +34,24 @@ img {
   margin: 0 auto;
 }
 
+.site_title {
+  line-height: 1px;
+}
+
+.page_title {
+  font-size: 0.9rem;
+  font-weight: normal;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
 .content {
   padding-top: 80px;
   margin-bottom: 100px;
 }
 
 /* ----------
-  ヘッダー
+ヘッダー
 ---------- */
 header {
   width: 100%;
@@ -161,7 +172,7 @@ header {
 }
 
 /* ----------
-  メイン
+TOP メイン
 ---------- */
 
 /* 商品一覧 */
@@ -203,7 +214,11 @@ header {
 }
 
 /* ----------
-  フッター
+Products メイン
+---------- */
+
+/* ----------
+フッター
 ---------- */
 footer {
   height: 58px;
