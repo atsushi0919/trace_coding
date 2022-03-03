@@ -11,7 +11,9 @@ html {
   font-size: 100%;
   font-family: Meiryo, 'メイリオ', 'Helvetica Neue', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka,
     'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  scroll-behavior: smooth;
+
+  /* scroll-behavior: smooth; */
+  scroll-behavior: auto;
 }
 
 li {
@@ -216,6 +218,24 @@ TOP メイン
 /* ----------
 Products メイン
 ---------- */
+
+.pagination {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li:nth-child(n + 2) {
+  padding-left: 40px;
+}
+
+.pagination li {
+  transition: all var(--base-transition);
+}
+
+.pagination li:hover {
+  opacity: var(--base-opacity);
+}
 
 /* ----------
 フッター
