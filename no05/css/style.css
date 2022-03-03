@@ -174,7 +174,7 @@ header {
 }
 
 /* ----------
-TOP メイン
+INDEX
 ---------- */
 
 /* 商品一覧 */
@@ -216,7 +216,7 @@ TOP メイン
 }
 
 /* ----------
-Products メイン
+Products
 ---------- */
 
 .pagination {
@@ -238,10 +238,10 @@ Products メイン
 }
 
 /* ----------
-ABOUT メイン
+ABOUT
 ---------- */
 
-.about_text {
+.about {
   max-width: 600px;
   font-size: 0.85rem;
   letter-spacing: 0.4px;
@@ -249,8 +249,44 @@ ABOUT メイン
   padding-bottom: 2px;
 }
 
-.about_text p {
+.about p {
   padding-bottom: 30px;
+}
+
+/* ----------
+COMPANY
+---------- */
+
+.company {
+  max-width: 600px;
+  font-size: 0.87rem;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.company dt {
+  width: 30%;
+  padding: 20px 10px;
+}
+
+.company dt:not(:last-of-type) {
+  border-bottom: solid 1px #dcdbdb;
+}
+
+.company dd {
+  width: 70%;
+  padding: 20px 10px;
+}
+
+.company dd:not(:last-child) {
+  border-bottom: solid 1px #dcdbdb;
+}
+
+.google_map {
+  width: 600px;
+  height: 300px;
+  padding-bottom: 310px;
 }
 
 /* ----------
@@ -290,6 +326,29 @@ width 900px
 @media screen and (max-width: 900px) {
   .item {
     width: 47%;
+  }
+
+  .company {
+    display: block;
+  }
+
+  .company dt {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+
+  .company dt:not(:last-of-type) {
+    border-bottom: none;
+  }
+
+  .company dd {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .google_map {
+    max-width: 600px;
+    width: 100%;
   }
 
   footer {
