@@ -238,6 +238,22 @@ Products メイン
 }
 
 /* ----------
+ABOUT メイン
+---------- */
+
+.about_text {
+  max-width: 600px;
+  font-size: 0.85rem;
+  letter-spacing: 0.4px;
+  line-height: 26.5px;
+  padding-bottom: 2px;
+}
+
+.about_text p {
+  padding-bottom: 30px;
+}
+
+/* ----------
 フッター
 ---------- */
 footer {
