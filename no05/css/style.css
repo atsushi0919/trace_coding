@@ -152,6 +152,14 @@ header {
   visibility: visible;
 }
 
+.nav_item {
+  transition: all var(--base-transition);
+}
+
+.nav_item:hover {
+  opacity: var(--base-opacity);
+}
+
 /* ----------
   メイン
 ---------- */
