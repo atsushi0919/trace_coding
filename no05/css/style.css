@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
+:root {
+  --base-color: #333333;
+}
+
 html {
+  color: var(--base-color);
   font-size: 100%;
   font-family: 'メイリオ', Meiryo, 'Helvetica Neue', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka,
     'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
@@ -13,6 +18,7 @@ li {
 
 a {
   text-decoration: none;
+  color: var(--base-color);
 }
 
 .wrapper {
@@ -57,7 +63,7 @@ header {
   right: 40px; /* 右端設定 */
   width: 30px; /* 線の長さ */
   height: 2px; /* 線の太さ */
-  background-color: #333333;
+  background-color: var(--base-color);
   z-index: 30;
   transition: all 0.5s;
 }
@@ -134,14 +140,14 @@ header {
   /* background-color: rgb(141, 241, 171); 確認用 */
 }
 
-.item_list li {
+.item_list img {
+  width: 100%;
+}
+
+.item {
   font-size: 0.75rem;
   width: 23%;
   margin-bottom: 40px;
-}
-
-.item_list img {
-  width: 100%;
 }
 
 .item_list .item_info {
