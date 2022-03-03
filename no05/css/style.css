@@ -34,6 +34,11 @@ img {
   margin: 0 auto;
 }
 
+.content {
+  padding-top: 80px;
+  margin-bottom: 100px;
+}
+
 /* ----------
   ヘッダー
 ---------- */
@@ -156,7 +161,6 @@ header {
   display: flex; /* フレックスボックス */
   flex-wrap: wrap; /* 折り返す */
   justify-content: space-between; /* 横方向 左右端 */
-  padding-top: 80px;
 }
 
 .item {
@@ -178,9 +182,16 @@ header {
 }
 
 .view_more {
-  margin-bottom: 100px;
   font-size: 0.9rem;
   text-align: center;
+}
+
+.view_more a {
+  transition: all var(--base-transition);
+}
+
+.view_more a:hover {
+  opacity: var(--base-opacity);
 }
 
 /* ----------
