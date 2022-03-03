@@ -23,6 +23,10 @@ a {
   color: var(--base-color);
 }
 
+img {
+  width: 100%;
+}
+
 .wrapper {
   max-width: 1360px;
   width: 100%;
@@ -30,7 +34,9 @@ a {
   margin: 0 auto;
 }
 
-/* ヘッダ */
+/* ----------
+  ヘッダー
+---------- */
 header {
   width: 100%;
   height: 80px; /* 高さ固定 */
@@ -54,9 +60,6 @@ header {
   width: 30px;
   text-align: right;
   cursor: pointer;
-
-  /* 確認用 */
-  /* background-color: rgb(231, 210, 250); */
 }
 
 /* 線の設定 */
@@ -71,28 +74,18 @@ header {
   transition: all var(--base-transition);
 }
 
-.nav_open .hamburger_line {
-  background-color: #fff;
-}
-
+/* 上の線 */
 .hamburger_line1 {
   top: 35px;
 }
 
-.nav_open .hamburger_line1 {
-  transform: rotate(-45deg);
-  top: 39px;
-}
-
+/* 下の線 */
 .hamburger_line2 {
   top: 43px;
 }
 
-.nav_open .hamburger_line2 {
-  transform: rotate(45deg);
-  top: 39px;
-}
-
+/* 初期状態（メニューOFF） */
+/* サイドメニュー */
 #side_menu {
   position: fixed; /* 個別に位置を制御 */
   top: 23px;
@@ -111,11 +104,6 @@ header {
   color: white;
 }
 
-.nav_open #side_menu {
-  visibility: visible; /* 表示 */
-  left: 50px;
-}
-
 #side_menu_bg {
   position: fixed; /* 個別に位置を制御 */
   left: 0; /* 基準左端 */
@@ -129,25 +117,46 @@ header {
   cursor: pointer;
 }
 
+/* メニューON */
+/* ハンバーガーメニューの線を白くする */
+.nav_open .hamburger_line {
+  background-color: #fff;
+}
+
+/* 上の線を 45° 傾ける */
+.nav_open .hamburger_line1 {
+  transform: rotate(-45deg);
+  top: 39px;
+}
+
+/* 下の線を 45° 傾ける */
+.nav_open .hamburger_line2 {
+  transform: rotate(45deg);
+  top: 39px;
+}
+
+/* サイドメニューを表示 */
+.nav_open #side_menu {
+  visibility: visible; /* 表示 */
+  left: 50px; /* 表示位置 */
+}
+
+/* 背景を暗くする */
 .nav_open #side_menu_bg {
   opacity: var(--base-opacity);
   visibility: visible;
 }
 
-/* トップ 商品一覧 */
-main {
-  height: 964px;
-}
+/* ----------
+  メイン
+---------- */
 
+/* 商品一覧 */
 .item_list {
-  padding-top: 80px;
   display: flex; /* フレックスボックス */
   flex-wrap: wrap; /* 折り返す */
   justify-content: space-between; /* 横方向 左右端 */
-}
-
-.item_list img {
-  width: 100%;
+  padding-top: 80px;
 }
 
 .item {
@@ -169,11 +178,14 @@ main {
 }
 
 .view_more {
+  margin-bottom: 100px;
   font-size: 0.9rem;
   text-align: center;
 }
 
-/* フッター */
+/* ----------
+  フッター
+---------- */
 footer {
   height: 58px;
   display: flex;
@@ -208,5 +220,12 @@ width 900px
 @media screen and (max-width: 900px) {
   .item {
     width: 47%;
+  }
+
+  footer {
+    display: block;
+  }
+  .copyright {
+    padding-top: 5px;
   }
 }
