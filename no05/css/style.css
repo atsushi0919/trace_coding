@@ -2,6 +2,8 @@
 
 :root {
   --base-color: #333333;
+  --base-opacity: 0.7;
+  --base-transition: 0.5s;
 }
 
 html {
@@ -38,6 +40,7 @@ header {
   justify-content: space-between; /* ロゴとボタンを左右に配置 */
   left: 0; /* 左端設定 */
   right: 0; /* 右端設定*/
+  z-index: 20;
   background-color: white;
 }
 
@@ -65,7 +68,7 @@ header {
   height: 2px; /* 線の太さ */
   background-color: var(--base-color);
   z-index: 30;
-  transition: all 0.5s;
+  transition: all var(--base-transition);
 }
 
 .nav_open .hamburger_line {
@@ -96,7 +99,7 @@ header {
   left: -100px; /* 左側にに隠しておく */
   visibility: hidden; /* 隠しておく */
   z-index: 30;
-  transition: all 0.5s;
+  transition: all var(--base-transition);
 }
 
 .nav_item {
@@ -127,17 +130,20 @@ header {
 }
 
 .nav_open #side_menu_bg {
-  opacity: 0.8;
+  opacity: var(--base-opacity);
   visibility: visible;
 }
 
 /* トップ 商品一覧 */
+main {
+  height: 964px;
+}
+
 .item_list {
   padding-top: 80px;
   display: flex; /* フレックスボックス */
   flex-wrap: wrap; /* 折り返す */
   justify-content: space-between; /* 横方向 左右端 */
-  /* background-color: rgb(141, 241, 171); 確認用 */
 }
 
 .item_list img {
@@ -150,13 +156,57 @@ header {
   margin-bottom: 40px;
 }
 
-.item_list .item_info {
+.item img {
+  transition: all var(--base-transition);
+}
+
+.item:hover img {
+  opacity: var(--base-opacity);
+}
+
+.item_info {
   padding-top: 5px;
+}
+
+.view_more {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* フッター */
+footer {
+  height: 58px;
+  display: flex;
+  justify-content: space-between; /* SNSとコピーライトを左右に配置 */
+  align-items: center; /* 縦方向 中央揃え */
+}
+
+.sns_link {
+  font-size: 0.75rem;
+  display: flex;
+}
+
+.sns_link li {
+  transition: all var(--base-transition);
+}
+
+.sns_link li:hover {
+  opacity: var(--base-opacity);
+}
+
+.sns_link li:nth-child(n + 2) {
+  padding-left: 30px;
+}
+
+.copyright {
+  font-size: 0.6rem;
 }
 
 /*--------------------
 width 900px
 --------------------*/
 @media screen and (max-width: 900px) {
-  /* common */
+  .item {
+    width: 47%;
+  }
 }
