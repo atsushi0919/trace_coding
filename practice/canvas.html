@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+    <style type="text/css">
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        background: seagreen;
+        border-radius: 5px;
+        color: #fff;
+        margin: 20px;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Canvas test</h1>
+    <div>
+      <!-- STARTボタン -->
+      <a href="#" class="btn">START</a>
+    </div>
+
+    <canvas id="canvas" width="600" height="200"> </canvas>
+
+    <script type="text/javascript">
+      const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+      draw()
+
+      function draw() {
+        // 描画設定
+        const canvas = document.getElementById('canvas')
+        const canvasWidth = canvas.width
+        const canvasHeight = canvas.height
+        if (!canvas || !canvas.getContext) {
+          return false
+        }
+        // 青: #38b6ff, 黄: #ffde59, 灰: #d9d9d9
+        const ctx = canvas.getContext('2d')
+        ctx.fillStyle = '#000000'
+        ctx.strokeStyle = '#38b6ff'
+        ctx.lineWidth = 4
+        ctx.textBaseline = 'middle'
+        ctx.textAlign = 'center'
+        let fontSize = 28
+        ctx.font = 'bold ' + fontSize + 'px 游ゴシック'
+
+        let array = [8, 7, 9, 1, 5, 6, 2, 10, 4, 3]
+        let x = 84
+        let y = canvas.height / 2
+        let w = 44
+        let h = 44
+        let r = 5
+
+        // array 初期状態を描画
+        let elements = []
+        for (let num of array) {
+          // rectNum(ctx, num, x, y, w, h, r)
+          elements.push({ n: num, x: x, y: y })
+          x += w + ctx.lineWidth
+        }
+
+        let count = 0
+        let timer = setInterval(function () {
+          // 前の描画を消す
+          ctx.clearRect(0, 0, canvasWidth, canvasHeight)
+
+          let num = elements[1].n
+          let x = elements[1].x
+          let y = elements[1].y
+          elements[1].x = x + 4
+          elements[1].y = y + 0
+          console.log(x, y)
+          rectNum(ctx, num, x, y, w, h, r)
+          count++
+          if (count > 50) {
+            clearInterval(timer)
+          }
+        }, 10)
+      }
+
+      // 角丸 + 数字
+      function rectNum(ctx, n, x, y, w, h, r, c = '#ffffff') {
+        let sx = x - w / 2
+        let sy = y - h / 2
+        ctx.fillStyle = c
+        ctx.beginPath()
+        ctx.moveTo(sx + r, sy)
+        ctx.lineTo(sx + w - r, sy)
+        ctx.arc(sx + w - r, sy + r, r, Math.PI * (3 / 2), 0, false)
+        ctx.lineTo(sx + w, sy + h - r)
+        ctx.arc(sx + w - r, sy + h - r, r, 0, Math.PI * (1 / 2), false)
+        ctx.lineTo(sx + r, sy + h)
+        ctx.arc(sx + r, sy + h - r, r, Math.PI * (1 / 2), Math.PI, false)
+        ctx.lineTo(sx, sy + r)
+        ctx.arc(sx + r, sy + r, r, Math.PI, Math.PI * (3 / 2), false)
+        ctx.closePath()
+        ctx.fill()
+        ctx.stroke()
+        ctx.fillStyle = '#000000'
+        ctx.fillText(n, x, y)
+      }
+    </script>
+  </body>
+</html>
