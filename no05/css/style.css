@@ -107,7 +107,7 @@ header {
 #side_menu {
   position: fixed; /* 個別に位置を制御 */
   top: 23px;
-  left: -100px; /* 左側にに隠しておく */
+  left: -100px; /* 左側に隠しておく */
   visibility: hidden; /* 隠しておく */
   z-index: 30;
   transition: all var(--base-transition);
